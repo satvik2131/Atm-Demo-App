@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:onClick="moveToHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/Home"
+        />
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@mipmap/deposit_foreground"
+        android:onClick="moveToDeposit"
+        android:title="@string/Deposit"/>
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@mipmap/withdraw_foreground"
+        android:onClick="moveToWithdraw"
+        android:title="@string/Withdraw"/>
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_history"
+        android:onClick="moveToHistory"
+        android:title="@string/History"/>
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:onClick="logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/Logout"/>
+</menu>

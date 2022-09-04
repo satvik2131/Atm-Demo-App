@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coreTheme">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="left"
+        android:text="Start Depositing"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Deposit Amount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/input_register_bg" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deposit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/input_register_hint"
+                android:inputType="number"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fd_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="left"
+                android:text="select Duration"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="2dp"
+                android:text="Interest rate (p.a.) 5.6%"
+                android:textColor="@color/input_register_hint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Interest upon maturity INR 0.00"
+                android:textColor="@color/input_register_hint" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_fixed_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deposit Now"
+                android:backgroundTint="@color/input_register_hint"
+                android:layout_marginVertical="50dp"
+                android:onClick="fixDepositMoney"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

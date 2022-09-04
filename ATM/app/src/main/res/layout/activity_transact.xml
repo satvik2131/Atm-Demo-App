@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.TransactActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/go_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Home"
+        android:onClick="goToHome"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_home"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/transactTitle"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:text="Money"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <Spinner
+        android:id="@+id/atmMachineTrList"
+        android:layout_width="212dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="164dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/amountLbl"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="amount"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginRight="21dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="numberSigned"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView6"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="262dp"
+        android:gravity="center"
+        android:text="Your balance"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <TextView
+        android:id="@+id/accBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="251dp"
+        android:layout_marginTop="286dp"
+        android:text="0"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="223dp"
+        tools:visibility="visible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/transactButton"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="466dp"
+        android:text="Transact"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelTransButton"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="466dp"
+        android:text="cancel"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+
+</RelativeLayout>

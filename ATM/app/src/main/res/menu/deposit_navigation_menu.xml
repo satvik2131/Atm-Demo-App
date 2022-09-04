@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!-- "Mark Favorite", should appear as action button if possible -->
+        <item
+            android:id="@+id/add_fd"
+            android:title="Add Fixed Deposit"
+            android:onClick="moveToAddFD"
+            app:showAsAction="never"/>
+
+        <!-- Settings, should always be in the overflow -->
+        <item android:id="@+id/list_fd"
+            android:title="List Fixed Deposit"
+            android:onClick="moveToListDeposit"
+            app:showAsAction="never"/>
+
+</menu>
