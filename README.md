@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 ## Overview
-*outline view* 
-=======
+
 # Atm-Demo-App
 
 ## Summary
@@ -15,5 +13,23 @@
 - Firebase 
 
 ## Visuals
-![alt](yourimg1.jpg) | ![alt](yourimg2.jpg)
->>>>>>> 35b1ed2d5bf7af0b5234501216bf93c97c290410
+
+<table>
+  <tr>
+    <td><img src="/image_sample/atm(1).jpg" width="200"></td>
+    <td><img src="/image_sample/atm(2).jpg"  width="200"></td>
+    <td><img src="/image_sample/atm(3).jpg"  width="200"></td>
+    <td><img src="/image_sample/atm(4).jpg"  width="200"></td>
+</tr>
+</table>
+
+## Usage 
+- First you have to register by clicking Register User
+- Go to ADMIN on the bottom left of login screen
+- Login with admin credentials
+> Username : add </br>
+> Password : pass </br>
+- Go to Approve User Requests and approve the one containing your email id
+- now you can login from the login screen and use the app.
+
+
